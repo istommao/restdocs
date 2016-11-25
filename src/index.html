@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>dashboard</title>
+        <link rel="stylesheet" href="css/main.css" media="screen" title="no title">
+        <link href="highlight/styles/monokai_sublime.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="pageWrapper">
+            <div class="topNav" id="topNav">
+                <div class="topbarHead">
+                    RESTful API
+                </div>
+            </div>
+            <div class="container" id="container">
+                <div class="aside" id="sidebar">
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">发送注册短信</a></li>
+                            <li><a href="#">用户注册</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="mainContent">
+                        <h2>请求地址</h2>
+                        <div class="reqAddress">
+                            <span class="reqMethod">GET</span><span class="reqURL">/api/user/</span>
+                        </div>
+                        <h3>请求头</h3>
+                        <table>
+                            <thead>
+                            <tr>
+                            <th>名称</th>
+                            <th>描述</th>
+                            <th>备注</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                            <td>API入口</td>
+                            <td>具体API接口地址</td>
+                            <td>如 <code>https://api.aq.163.com/vx/xx/check</code></td>
+                            </tr>
+                            <tr>
+                            <td>公共参数</td>
+                            <td>每个接口都包含的通用参数</td>
+                            <td>详见 <a href="#API_2" data-scroll="">公共参数</a> 说明</td>
+                            </tr>
+                            <tr>
+                            <td>私有参数</td>
+                            <td>每个接口特有的参数</td>
+                            <td>详见每个API接口定义</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <h3>请求数据</h3>
+                        <h3>返回数据</h3>
+<pre><code class="node">{
+  "port": 5002,
+  "middlewares": ["cors.js"],
+  "routes": "routes.json",
+  "id": "uid"
+}
+</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="highlight/highlight.min.js"></script>
+        <script type="text/javascript">
+            hljs.initHighlightingOnLoad();
+        </script>
+    </body>
+</html>
